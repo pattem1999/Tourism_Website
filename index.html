@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    full screen slider and responsive navigation bar
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  
+    <header>
+      <div id="topnav" class="navbar">
+        <a href="#" class="logo">
+          Tourism<span style="color: red">Point</span>
+        </a>
+        <div class="navbar-right menu">
+          <a href="#" class="active">
+            Home
+          </a>
+          <a href="place">
+            Places
+          </a>
+          <a href="#">
+            Services
+          </a>
+          <a href="#">
+            About
+          </a>
+          <a href="#">
+            Contact
+          </a>
+          <a href="assets/responsive-login-form-master/login.html">
+            Login
+          </a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="slideshow-container" class="slideshow-container">
+        <div class="slide-item bgimg fade" style="background-image: url('assets/pexels-shalender-kumar-6618044.jpg');">
+          <div class="caption">
+            <h2>
+              Taj Mahal
+            </h2>
+            <p>
+              Taj Mahal is a beautiful monument built on the bank of Yamuna River in Agra. It is made up of white ivory marble. It was built as a tomb for Mumtaz Mahal, the beloved wife of Mughal Emperor Shah Jahan. The monument includes a mosque and a guest house along with a garden which surrounds the monument from three sides.
+            </p>
+            <button>
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <div class="slide-item bgimg fade" style="background-image: url('assets/pexels-skylynn-shalini-6687168.jpg'); background-position: center">
+          <div class="caption">
+            <h2>
+              Kanyakumari
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae quidem impedit. Quasi cum voluptatem odit repellat! Accusantium rem voluptate illum sit eum eius repellendus placeat, quos minus? Tempore, corporis.
+            </p>
+            <button>
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <div class="slide-item bgimg fade" style="background-image: url('assets/1568887796_shutterstock_677104483.jpg.jpg');">
+          <div class="caption">
+            <h2>
+              Cochin
+             </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae quidem impedit. Quasi cum voluptatem odit repellat! Accusantium rem voluptate illum sit eum eius repellendus placeat, quos minus? Tempore, corporis.
+            </p>
+            <button>
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <div id="slide-control" class="slide-control">
+          <span class="dot" onclick="chooseSlide(0)"></span>
+          <span class="dot" onclick="chooseSlide(1)"></span>
+          <span class="dot" onclick="chooseSlide(2)"></span>
+        </div>
+      </div>
+    </header>
+
+      <script src="index.js"></script>
+    
+
+
+
+  <div style=" background-color: #0E1041;width:100%;" >
+   <div class="grid" >
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/rome.jpg" alt="Rome" />
+          <div class="card-content">
+            <h1 class="card-header">Rome</h1>
+            <p class="card-text">
+              Rome is known for its stunning <strong> architecture</strong>,
+              with the Colleseum, Pantheon, and Trevi Fountain as the main
+              attractions.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/grand-canyon.jpg" alt="Grand Canyon"/>
+          <div class="card-content">
+            <h1 class="card-header">Grand Canyon</h1>
+            <p class="card-text">
+              One of the world's natural wonders, the iconic Grand Canyon draws
+              oohs and aahs from visitors perched at the edge of its
+              <strong>towering cliffs</strong>.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/maldives.jpg" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">Maldives</h1>
+            <p class="card-text">
+              The Maldives are known for their
+              <strong>natural environment</strong> including the blue ocean,
+              white beaches, and clean air, attracting tourists.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/maldives.jpg" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">Maldives</h1>
+            <p class="card-text">
+              The Maldives are known for their
+              <strong>natural environment</strong> including the blue ocean,
+              white beaches, and clean air, attracting tourists.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+      <div class="grid" >
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/rome.jpg" alt="Rome" />
+          <div class="card-content">
+            <h1 class="card-header">Rome</h1>
+            <p class="card-text">
+              Rome is known for its stunning <strong> architecture</strong>,
+              with the Colleseum, Pantheon, and Trevi Fountain as the main
+              attractions.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/grand-canyon.jpg" alt="Grand Canyon"/>
+          <div class="card-content">
+            <h1 class="card-header">Grand Canyon</h1>
+            <p class="card-text">
+              One of the world's natural wonders, the iconic Grand Canyon draws
+              oohs and aahs from visitors perched at the edge of its
+              <strong>towering cliffs</strong>.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/maldives.jpg" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">Maldives</h1>
+            <p class="card-text">
+              The Maldives are known for their
+              <strong>natural environment</strong> including the blue ocean,
+              white beaches, and clean air, attracting tourists.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="assets/maldives.jpg" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">Maldives</h1>
+            <p class="card-text">
+              The Maldives are known for their
+              <strong>natural environment</strong> including the blue ocean,
+              white beaches, and clean air, attracting tourists.
+            </p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+      
+
+
+
+
+<footer style="font-size: 80%;">
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi soluta aperiam, placeat maxime rem perferendis eos eaque aspernatur consectetur nostrum, consequuntur modi accusamus ratione voluptates! A dolore sapiente adipisci!</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2> Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+
+            
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>647 Linda Street<br>Phoneixville,PA 19460,<br>USA</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                        <p><a href="tel:+12345678900">1 234 567 8900</a><br>
+                        <a href="tel:+12345678900">1 234 567 8900</a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:pattemvenkataramana886@gmail,com">pattemvenkataramana886@gmail.com</a><br>
+                        
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </footer>
+    <div class="copyrightText">
+        <p>Copyright &#169; 2021 TourismPoint .All Rights Reserved.</p>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
